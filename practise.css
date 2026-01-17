@@ -6,32 +6,32 @@
   font-style: normal;
 }
 
-.Header-content{
-    max-width: 940px;
+.container{
+    max-width: 1444px;
     margin: 0 auto;
+    
 }
-.Header-title{
+
+.header-title{
     font-size: 24px;
     font-weight: 700;
     color: #3A3A3A;
-    margin-top: 87px;
     margin-left: 120px;
+    
+   
     
    
 }
 .display-flex{
     display: flex;
+    align-items: center;
+    
+    
     
 }
 .nav-bar{
-    margin-top: 95px;
-    margin-right: 120px;
-    justify-content: center;
-    margin-left: 494px;
     gap: 34px;
-    align-items: center;
-    text-decoration: none;
-    
+    margin-right: 120px;
     
 }
 .nav-item{
@@ -39,6 +39,7 @@
     font-size: 16px;
     align-items: center;
     justify-content: center;
+    
   
     
 }
@@ -86,21 +87,34 @@
     background-color: #E02C6D;
     color: #FFFFFF;
 }
-.image{
-    width: 440px;
-    height: 414px;
-    margin-top: 211px;
-    margin-left: 165px;
+
+  .camera-parent {
+    width: ;
+  }
+    
+    
+   
+
+.camera-parent img{
+
+    width: 100%;
 }
-.container{
-    gap: 133px;
+
+.nav-container{
+    margin-top: 95px;
 }
 
+@media (max-width: 768px) {
+  .camera-parent {
+    flex-direction: column;
+    text-align: center;
+  }
 
-
-
-
-
+  .image {
+    order: -1;          /* 👈 ক্যামেরা ছবি উপরে */
+    margin-bottom: 20px;
+  }
+}
 
 
 
